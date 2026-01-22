@@ -1,1 +1,359 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV — PIYAS BARUA (Administrateur Systèmes & DevOps)</title>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1b31;
+      --text:#e9eefc;
+      --muted:#aab6d6;
+      --line:rgba(255,255,255,.12);
+      --accent:#6ee7ff;
+      --chip:rgba(110,231,255,.12);
+      --shadow:0 18px 40px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(110,231,255,.18), transparent 60%),
+        radial-gradient(900px 600px at 90% 20%, rgba(167,139,250,.16), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070b14);
+      padding:28px 18px;
+    }
+    a{color:inherit; text-decoration:none}
+    .page{
+      max-width:1040px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:340px 1fr;
+      gap:18px;
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .sidebar{
+      position:sticky;
+      top:18px;
+      align-self:start;
+    }
+    .header{
+      padding:22px;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(700px 250px at 20% 0%, rgba(110,231,255,.14), transparent 55%);
+    }
+    .name{
+      font-size:28px;
+      margin:0;
+      line-height:1.1;
+    }
+    .role{
+      margin-top:8px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .section{
+      padding:16px 20px;
+      border-bottom:1px solid var(--line);
+    }
+    .section:last-child{border-bottom:0}
+    h2{
+      margin:0 0 10px;
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .contact{
+      font-size:13px;
+      color:var(--muted);
+      display:grid;
+      gap:10px;
+    }
+    .contact .item{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .contact .label{color:var(--muted)}
+    .contact .value{color:var(--text); word-break:break-word}
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .chip{
+      padding:7px 10px;
+      border-radius:999px;
+      background:var(--chip);
+      border:1px solid rgba(110,231,255,.22);
+      font-size:12px;
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .main{
+      padding:22px;
+    }
+    .intro{
+      padding:18px;
+      border-bottom:1px solid var(--line);
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.55;
+    }
+    .grid{
+      display:grid;
+      gap:14px;
+      margin-top:16px;
+    }
+    .block{
+      padding:16px 18px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:rgba(0,0,0,.15);
+    }
+    .block h3{
+      margin:0;
+      font-size:15px;
+      letter-spacing:.2px;
+    }
+    .meta{
+      margin-top:6px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    ul{
+      margin:12px 0 0;
+      padding-left:18px;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.55;
+    }
+    .kpis{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+    .kpi{
+      padding:6px 10px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      font-size:12px;
+      color:var(--text);
+    }
+    @media(max-width:900px){
+      .page{grid-template-columns:1fr}
+      .sidebar{position:relative; top:auto}
+    }
+    @media print{
+      body{background:#fff; color:#000; padding:0}
+      .card{box-shadow:none; border:1px solid #ddd; background:#fff}
+      h2,.meta,ul,.role{color:#374151}
+      .chip,.kpi{background:#f3f4f6; border-color:#e5e7eb; color:#111}
+      .intro{color:#374151}
+      a{color:#111}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- SIDEBAR -->
+    <aside class="card sidebar">
+      <div class="header">
+        <h1 class="name">PIYAS BARUA</h1>
+        <p class="role">Administrateur Systèmes & DevOps</p>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="contact">
+          <div class="item">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:piyas.barua@proton.me">piyas.barua@proton.me</a></div>
+          </div>
+          <div class="item">
+            <div class="label">Téléphone</div>
+            <div class="value"><a href="tel:+33651190524">0651190524</a></div>
+          </div>
+          <div class="item">
+            <div class="label">Ville</div>
+            <div class="value">Noisy-le-Sec</div>
+          </div>
+          <div class="item">
+            <div class="label">LinkedIn</div>
+            <div class="value">Non renseigné</div>
+          </div>
+          <div class="item">
+            <div class="label">GitHub</div>
+            <div class="value">Non renseigné</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Compétences</h2>
+        <div class="chips">
+          <div class="chip">Administration systèmes</div>
+          <div class="chip">Support N2</div>
+          <div class="chip">Windows</div>
+          <div class="chip">Active Directory</div>
+          <div class="chip">GPO</div>
+          <div class="chip">PowerShell</div>
+          <div class="chip">Supervision</div>
+          <div class="chip">GLPI</div>
+          <div class="chip">ServiceNow (ITSM)</div>
+          <div class="chip">Déploiement / Masterisation</div>
+          <div class="chip">Documentation</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Langues</h2>
+        <div class="contact">
+          <div class="item">
+            <div class="label">Français</div>
+            <div class="value">Natif / courant</div>
+          </div>
+          <div class="item">
+            <div class="label">Anglais</div>
+            <div class="value">B1 / B2</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="card">
+      <div class="intro">
+        Administrateur systèmes orienté exploitation et amélioration continue, avec une solide expérience en support niveau 2,
+        Active Directory / GPO, automatisation PowerShell, supervision et gestion d’incidents. Objectif : fiabiliser,
+        standardiser et automatiser les environnements IT.
+      </div>
+
+      <div class="main">
+
+        <!-- EXPÉRIENCE -->
+        <section class="grid" aria-label="Expérience">
+          <h2>Expérience</h2>
+
+          <article class="block">
+            <h3>Administrateur systèmes — Assurance Maladie</h3>
+            <p class="meta">Paris 75019 — 08/2023 à aujourd’hui — Contrat d’apprentissage — Support Niveau 2</p>
+            <ul>
+              <li>Administration et exploitation du SI (serveurs, postes, services).</li>
+              <li>Gestion des comptes, droits et politiques de sécurité (Active Directory / GPO).</li>
+              <li>Automatisation de tâches via scripts PowerShell et standardisation des déploiements.</li>
+              <li>Supervision, gestion des incidents, documentation et amélioration continue.</li>
+            </ul>
+            <div class="kpis">
+              <div class="kpi">Support N2</div>
+              <div class="kpi">AD / GPO</div>
+              <div class="kpi">PowerShell</div>
+              <div class="kpi">Exploitation</div>
+            </div>
+          </article>
+
+          <article class="block">
+            <h3>Référent Technique Support Utilisateurs — CPAM de Paris (Assurance Maladie)</h3>
+            <p class="meta">Paris — 09/2021 à 08/2023 — Contrat de professionnalisation</p>
+            <ul>
+              <li>Déploiement de matériel informatique et préparation des postes (masterisation / image).</li>
+              <li>Installation de logiciels métiers (administratifs et médicaux) et maintenance des postes.</li>
+              <li>Gestion du parc et suivi des demandes/incidents via GLPI.</li>
+              <li>Assistance utilisateurs à distance et en proximité (diagnostic, résolution, escalade).</li>
+              <li>Gestion de la documentation technique et du référentiel logiciels.</li>
+            </ul>
+            <div class="kpis">
+              <div class="kpi">GLPI</div>
+              <div class="kpi">Déploiement</div>
+              <div class="kpi">Support</div>
+              <div class="kpi">Documentation</div>
+            </div>
+          </article>
+
+          <article class="block">
+            <h3>Conseiller Support Technique — SPIE</h3>
+            <p class="meta">Paris — 07/2019 à 03/2020 — CDD</p>
+            <ul>
+              <li>Support utilisateurs multi-applications (environnement spécifique SNCF).</li>
+              <li>Supervision des serveurs et des flux applicatifs (suivi, premières analyses).</li>
+              <li>Participation à la formation et à l’onboarding des nouveaux collaborateurs.</li>
+              <li>Gestion des tickets via ServiceNow (ITSM) et support téléphonique (Eloquant).</li>
+            </ul>
+            <div class="kpis">
+              <div class="kpi">ServiceNow</div>
+              <div class="kpi">Supervision</div>
+              <div class="kpi">Support</div>
+              <div class="kpi">ITSM</div>
+            </div>
+          </article>
+
+          <article class="block">
+            <h3>Technicien de déploiement — Ergalis IT</h3>
+            <p class="meta">Paris — 11/2018 à 05/2019 — Intérim</p>
+            <ul>
+              <li>Accompagnement des utilisateurs pour l’activation de la carte professionnelle.</li>
+              <li>Inventaire des postes informatiques et suivi du parc.</li>
+              <li>Enregistrement des matériels dans l’outil SM9.</li>
+            </ul>
+            <div class="kpis">
+              <div class="kpi">Déploiement</div>
+              <div class="kpi">Inventaire</div>
+              <div class="kpi">SM9</div>
+            </div>
+          </article>
+        </section>
+
+        <!-- FORMATION -->
+        <section class="grid" aria-label="Formation">
+          <h2>Formation</h2>
+
+          <article class="block">
+            <h3>Mastere Ingénieur Systèmes, Réseaux et Cybersécurité</h3>
+            <p class="meta">Campus Numérique, Paris 75020 — Septembre 2024 à aujourd’hui</p>
+          </article>
+
+          <article class="block">
+            <h3>Licence Administrateur Systèmes DevOps</h3>
+            <p class="meta">IRIS — École Supérieure d’Informatique, Paris 75017 — Septembre 2023 à Août 2024</p>
+          </article>
+
+          <article class="block">
+            <h3>Bac+2 Gestionnaire Maintenance Support Informatique</h3>
+            <p class="meta">CESI, Nanterre — Septembre 2021 à Juin 2023</p>
+          </article>
+
+          <article class="block">
+            <h3>Bac Technicien d’Assistance Informatique</h3>
+            <p class="meta">Laser Formation, Paris — Février 2018 à Octobre 2018</p>
+          </article>
+
+          <article class="block">
+            <h3>Bac Système Électronique Numérique</h3>
+            <p class="meta">Lycée Professionnel Denis Papin, Aubervilliers — Septembre 2015 à Septembre 2017</p>
+          </article>
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
 
