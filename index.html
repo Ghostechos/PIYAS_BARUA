@@ -142,20 +142,7 @@
       color:var(--muted);
       line-height:1.55;
     }
-    .kpis{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:12px;
-    }
-    .kpi{
-      padding:6px 10px;
-      border-radius:10px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
-      font-size:12px;
-      color:var(--text);
-    }
+
     @media(max-width:900px){
       .page{grid-template-columns:1fr}
       .sidebar{position:relative; top:auto}
@@ -164,7 +151,7 @@
       body{background:#fff; color:#000; padding:0}
       .card{box-shadow:none; border:1px solid #ddd; background:#fff}
       h2,.meta,ul,.role{color:#374151}
-      .chip,.kpi{background:#f3f4f6; border-color:#e5e7eb; color:#111}
+      .chip{background:#f3f4f6; border-color:#e5e7eb; color:#111}
       .intro{color:#374151}
       a{color:#111}
     }
@@ -254,7 +241,7 @@
           <h2>Expérience</h2>
 
           <article class="block">
-            <h3>Administrateur systèmes — Assurance Maladie</h3>
+            <h3> GESTIONNAIRE INFRASTRUCTURE MATERIEL LOGICIEL IML — Assurance Maladie</h3>
             <p class="meta">Paris 75019 — 08/2023 à aujourd’hui — Contrat d’apprentissage — Support Niveau 2</p>
             <ul>
               <li>Administration et exploitation du SI (serveurs, postes, services).</li>
@@ -262,14 +249,9 @@
               <li>Automatisation de tâches via scripts PowerShell et standardisation des déploiements.</li>
               <li>Supervision, gestion des incidents, documentation et amélioration continue.</li>
             </ul>
-            <div class="kpis">
-              <div class="kpi">Support N2</div>
-              <div class="kpi">AD / GPO</div>
-              <div class="kpi">PowerShell</div>
-              <div class="kpi">Exploitation</div>
-            </div>
           </article>
 
+          <!-- CPAM (plus récent d'abord) -->
           <article class="block">
             <h3>Référent Technique Support Utilisateurs — CPAM de Paris (Assurance Maladie)</h3>
             <p class="meta">Paris — 09/2021 à 08/2023 — Contrat de professionnalisation</p>
@@ -280,12 +262,17 @@
               <li>Assistance utilisateurs à distance et en proximité (diagnostic, résolution, escalade).</li>
               <li>Gestion de la documentation technique et du référentiel logiciels.</li>
             </ul>
-            <div class="kpis">
-              <div class="kpi">GLPI</div>
-              <div class="kpi">Déploiement</div>
-              <div class="kpi">Support</div>
-              <div class="kpi">Documentation</div>
-            </div>
+          </article>
+
+          <article class="block">
+            <h3>Référent Technique Support Utilisateurs — CPAM de Paris (Assurance Maladie)</h3>
+            <p class="meta">Paris — 09/2020 à 09/2021 — Intérim / CDD</p>
+            <ul>
+              <li>Migration des postes de travail de Windows 7 vers Windows 10.</li>
+              <li>Paramétrage et préparation des PC utilisateurs.</li>
+              <li>Transfert et sécurisation des données des agents.</li>
+              <li>Déplacements sur différents sites pour accompagner les migrations Windows 10.</li>
+            </ul>
           </article>
 
           <article class="block">
@@ -297,12 +284,6 @@
               <li>Participation à la formation et à l’onboarding des nouveaux collaborateurs.</li>
               <li>Gestion des tickets via ServiceNow (ITSM) et support téléphonique (Eloquant).</li>
             </ul>
-            <div class="kpis">
-              <div class="kpi">ServiceNow</div>
-              <div class="kpi">Supervision</div>
-              <div class="kpi">Support</div>
-              <div class="kpi">ITSM</div>
-            </div>
           </article>
 
           <article class="block">
@@ -313,11 +294,6 @@
               <li>Inventaire des postes informatiques et suivi du parc.</li>
               <li>Enregistrement des matériels dans l’outil SM9.</li>
             </ul>
-            <div class="kpis">
-              <div class="kpi">Déploiement</div>
-              <div class="kpi">Inventaire</div>
-              <div class="kpi">SM9</div>
-            </div>
           </article>
         </section>
 
@@ -356,4 +332,3 @@
   </div>
 </body>
 </html>
-
